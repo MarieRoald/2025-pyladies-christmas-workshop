@@ -1,0 +1,18 @@
+name = "turtlethread-project"
+
+# Install packages to be used in this project
+packages = [
+    "https://files.pythonhosted.org/packages/16/b7/83c0151db9d4634049de30a789a47fa517c3a708912a8c86c1c33e0063ec/turtlethread-0.0.11-py2.py3-none-any.whl",
+    "https://files.pythonhosted.org/packages/7a/fa/e1ffc9cf74ae0c952be6f7147abde060a68d2bb3559170914ac19eb9f854/pyembroidery-1.5.1-py2.py3-none-any.whl",
+]
+
+# Bundle your project into a zip file which can be downloaded or used
+# as a module in your Anaconda Toolbox Excel Add-in
+# export = true
+
+# Fetch arbitrary content from URLs onto the virtual filesystem, just map a valid
+# URL to a destination in the filesystem path
+[files]
+"turtlethread_pyscript.py" = "turtlethread_pyscript.py"
+"svg.py" = "svg.py"
+"turtle.py" = "turtle.py"
