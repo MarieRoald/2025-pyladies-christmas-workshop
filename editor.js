@@ -19,7 +19,7 @@ function saveCodeAs() {
     }
 }
 
-function createSaveSvgAnchorTag() {
+function saveTurtleSvg() {
     let svgCanvas = document.getElementById("turtleSvgCanvas");
     let tempSvgCanvas = svgCanvas.cloneNode(true);
     tempSvgCanvas.removeAttribute("id")
@@ -42,7 +42,15 @@ function createSaveSvgAnchorTag() {
     a.setAttribute("download", "turtle_canvas.svg");
     a.setAttribute("href", url);
     a.innerText = "Download Turtle drawing"
-    return a;
+    a.click();
+}
+
+function createSaveSvgAnchorTag() {
+    let a = document.createElement("a");
+    a.innerText = "Download Turtle drawing";
+    a.onclick = saveTurtleSvg;
+    a.href = "#";
+    return a
 }
   
 document.getElementById("downloadLink").onclick = saveCodeAs;
